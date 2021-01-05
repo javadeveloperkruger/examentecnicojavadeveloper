@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+   
+<persistence-unit name="JPAProjects" >
+	 <description>JPA Demo</description>
+    
+		<class>ec.com.kruger.examen.Banco</class>
+		<class>ec.com.kruger.examen.OrdenesPago</class>
+		<class>ec.com.kruger.examen.Sucursal</class>
+		
+		
+	<properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57Dialect"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://database-1.cxcouurs3ecp.us-east-1.rds.amazonaws.com:3306/Examen?useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.user" value="admin"/>
+            <property name="javax.persistence.jdbc.password" value="#Kruger2021#"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"></property>
+            <property name="hibernate.c3pO.timeout" value="600"/>
+            <property name="hibernate.generate_statistics" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

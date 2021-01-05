@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1609850616470
+Build-Jdk: 1.8.0_241
+Built-By: Administrator
+Bundle-Description: Empty Camel Spring Example
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Empty Camel Spring Example [BuscarSucursales]
+Bundle-SymbolicName: BuscarSucursales
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.examen.tecnico;uses:="org.apache.camel";version="1.0
+ .0"
+Import-Package: ec.com.kruger.examen,javax.persistence;version="[2.2,3)"
+ ,org.apache.camel;version="[2.18,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007
