@@ -1,2 +1,3 @@
 # examentecnicojavadeveloper
-Ex´men técnico java Developer
+Exámen técnico
+
